@@ -2236,12 +2236,12 @@ function session_auth() {
 function print_credit() {
 	global $g;
 
-	return  '<a target="_blank" href="https://pfsense.org">' . g_get('product_label') . '</a>' .
+	return  '<a target="_blank" href="https://www.infopercept.com">' . g_get('product_label') . '</a>' .
 			gettext(' is developed and maintained by ') .
-			'<a target="_blank" href="https://netgate.com">Netgate. </a>' . ' &copy; ESF ' . g_get('product_copyright_years') .
-			'<a target="_blank" href="https://pfsense.org/license">' .
+			'<a target="_blank" href="https://www.infopercept.com">Infopercept. </a>' . ' &copy;  ' . g_get('product_copyright_years') .
+			'<a target="_blank" href="https://www.infopercept.com">' .
 			gettext(' View license.') . '</a>';
-}
+
 function get_user_remote_address($print_all=true) {
 	$remote_address = $_SERVER['REMOTE_ADDR'];
 	/* Add extra identifying header information upon request */
