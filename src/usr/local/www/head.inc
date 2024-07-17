@@ -438,18 +438,18 @@ $diagnostics_menu = msort(array_merge($diagnostics_menu, return_ext_menu("Diagno
 if (!g_get('disablehelpmenu')) {
 	$help_menu = array();
 	$help_menu[] = array(gettext("About this Page"), $helpurl);
-	if (g_get('product_name') == "pfSense") {
-		$help_menu[] = array(gettext("Bug Database"), "https://redirects.netgate.com/issues");
+	if (g_get('product_name') == "invinSense") {
+		$help_menu[] = array(gettext("Bug Database"), "https://www.infopercept.com");
 	}
 
-	$help_menu[] = array(gettext("User Forum"), "https://redirects.netgate.com/forum");
-	$help_menu[] = array(gettext("Documentation"), "https://redirects.netgate.com/docs");
-	$help_menu[] = array(gettext("Paid Support"), "https://redirects.netgate.com/support");
-	$help_menu[] = array(gettext("pfSense Book"), "https://redirects.netgate.com/book");
-	$help_menu[] = array(gettext("FreeBSD Handbook"), "https://redirects.netgate.com/fbsdhandbook");
-	$help_menu[] = array(gettext("User survey"), "https://redirects.netgate.com/survey_1");
+	$help_menu[] = array(gettext("User Forum"), "https://www.infopercept.com");
+	$help_menu[] = array(gettext("Documentation"), "https://www.infopercept.com");
+	$help_menu[] = array(gettext("Paid Support"), "https://www.infopercept.com");
+	$help_menu[] = array(gettext("invinSense Book"), "https://www.infopercept.com");
+	$help_menu[] = array(gettext("FreeBSD Handbook"), "https://www.infopercept.com");
+	$help_menu[] = array(gettext("User survey"), "https://www.infopercept.com");
 	if  (strpos(g_get('product_label'), 'Plus') === false) {
-		$help_menu[] = array(gettext("Upgrade to pfSense Plus"), "https://redirects.netgate.com/upgrade");
+		$help_menu[] = array(gettext("Upgrade to invinSense Plus"), "https://www.infopercept.com");
 	}
 	$help_menu = msort(array_merge($help_menu, return_ext_menu("Help")), 0);
 }
