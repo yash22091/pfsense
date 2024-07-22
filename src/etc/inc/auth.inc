@@ -2241,7 +2241,7 @@ function print_credit() {
 			'<a target="_blank" href="https://www.infopercept.com">Infopercept. </a>' . ' &copy;  ' . g_get('product_copyright_years') .
 			'<a target="_blank" href="https://www.infopercept.com">' .
 			gettext(' View license.') . '</a>';
-
+}
 function get_user_remote_address($print_all=true) {
 	$remote_address = $_SERVER['REMOTE_ADDR'];
 	/* Add extra identifying header information upon request */
